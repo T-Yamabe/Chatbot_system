@@ -67,8 +67,3 @@ class TestGeneratePassword:
             ph.verify(hashed, password)
         except VerifyMismatchError:
             pytest.fail("ハッシュ化されたパスワードの検証に失敗しました")
-
-
-# テスト実行用のpytest設定
-if __name__ == "__main__":
-    pytest.main([__file__, "-v"])
